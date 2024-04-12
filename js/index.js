@@ -6,7 +6,7 @@ fetch("config.json")
     key = config.key
   })
   .catch((err) => {
-    console.log(`Error fetching configuration: ${err}`);
+    console.error(`Error fetching configuration: ${err}`);
   });
 
 let btn = document.getElementById("send");
